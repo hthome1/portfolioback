@@ -33,8 +33,9 @@ app.use(morgan('dev'));
 app.use(helmet())
 
 
-app.listen(3003, ()=> console.log("Server up"));
+app.listen(process.env.PORT, ()=> console.log("Server up"));
 
 
 module.exports = app;
+
 
